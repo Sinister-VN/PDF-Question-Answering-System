@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# Vector database
+vectorstore/
+
+# Model cache
+.cache/
+.huggingface/
+
+# OS
+.DS_Store
+Thumbs.db
