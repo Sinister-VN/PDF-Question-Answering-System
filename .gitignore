@@ -29,3 +29,6 @@ Thumbs.db
 
 # Data
 data/*.pdf
+
+# Environment files
+.env

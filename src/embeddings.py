@@ -1,15 +1,15 @@
 from sentence_transformers import SentenceTransformer
-from src.config import EMDBEDDING_MODEL
+from src.config import EMBEDDING_MODEL
 
 # Load the pre-trained model
-embedding_model = SentenceTransformer(EMDBEDDING_MODEL)
+embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
 
 class EmbeddingModel:
     def __init__(self):
 
         self.model = SentenceTransformer(
-            EMDBEDDING_MODEL
+            EMBEDDING_MODEL
         )
     
     def encode(self, texts):

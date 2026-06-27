@@ -5,7 +5,7 @@ class VectorStore:
     def __init__(self, embeddings):
         self.dimension = embeddings.shape[1]
 
-        self.index = faiss.IndexFlatL2(dimension)
+        self.index = faiss.IndexFlatL2(self.dimension)
 
         self.index.add(
             embeddings.astype(np.float32)
